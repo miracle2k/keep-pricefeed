@@ -1,6 +1,9 @@
-type ExampleEntity @entity {
+type Price @entity {
   id: ID!
-  count: BigInt!
-  val: BigInt! # uint256
-  age: BigInt! # uint256
+  val: BigInt!
+  age: BigInt!
+
+  transactionHash: Bytes!
+  blockNumber: BigInt!
+  timestamp: BigInt!
 }
